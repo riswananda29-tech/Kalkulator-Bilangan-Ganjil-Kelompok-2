@@ -58,8 +58,25 @@ footer{padding:24px 0 0;color:#6f7c96;text-align:center;font-size:12px}
 <section class="panel">
 <form id="calcForm">
 <div class="form-grid">
-<label><span>Angka awal</span><input id="awal" type="number" step="1" placeholder="Contoh: 1" required></label>
-<label><span>Angka akhir</span><input id="akhir" type="number" step="1" placeholder="Contoh: 20" required></label>
+<label>
+    <span>Angka awal</span>
+    <input id="awal" type="number"
+           step="1"
+           min="0"
+           max="9007199254740991"
+           placeholder="Contoh: 1"
+           required>
+</label>
+
+<label>
+    <span>Angka akhir</span>
+    <input id="akhir" type="number"
+           step="1"
+           min="0"
+           max="9007199254740991"
+           placeholder="Contoh: 20"
+           required>
+</label>
 </div>
 <button type="submit">Hitung bilangan ganjil <span>→</span></button>
 </form>
